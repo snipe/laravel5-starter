@@ -1,0 +1,9 @@
+.avatar {
+  height: 25px;
+  /* fallback for older browsers */
+  width: 25px;
+  margin: 0px 5px 0px 0px;
+  border-radius: 3px;
+  float: left; }
+
+/*# sourceMappingURL=app.css.map */
