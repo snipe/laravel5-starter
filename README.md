@@ -10,6 +10,8 @@ It handles this by comparing the registered email addresses with the ones return
 
 All CSS changes should be done through the `resources/assets/sass/app.scss` file, with the generated CSS output to  `public/css/app.css`. We use Elixer, so this is easy to do using Gulp with the included `gulpfile.js`.
 
+If you wish to contribute to this project, all pull requests must include unit and/or Codeception tests. Pull requests that break the build will not be accepted. 
+
 ### To Do
 
 - Finish the email interstitial that requires an email address if the social network doesn't pass one back.
