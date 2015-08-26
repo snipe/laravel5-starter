@@ -77,9 +77,15 @@
   </div><!-- /.container-fluid -->
 </nav>
 
+<section class="container">
+    <div class="row">
+	<!-- Notifications -->
+	@include('notifications')
+	</div>
+</section>
 
-	<!-- Content -->
-	@yield('content')
+<!-- Content -->
+@yield('content')
 
 
 	</body>
