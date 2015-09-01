@@ -5,3 +5,4 @@ Homestead.yaml
 .DS_Store
 
 tests/_output/*
+storage/testing.sqlite
