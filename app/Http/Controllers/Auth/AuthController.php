@@ -9,6 +9,9 @@ use Illuminate\Foundation\Auth\ThrottlesLogins;
 use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
 use Socialite;
 use Auth;
+use Input;
+use Redirect;
+use Config;
 
 class AuthController extends Controller
 {
@@ -106,11 +109,13 @@ class AuthController extends Controller
      */
     protected function validator(array $data)
     {
+
         return Validator::make($data, [
             'name' => 'required|max:255',
-            'email' => 'required|email|max:255|unique:users',
-            'password' => 'required|confirmed|min:6',
+            'email' => 'required|email|max:255|unique:users|not_blacklisted',
+            'password' => 'required|confirmed|min:8'
         ]);
+
     }
 
     /**
