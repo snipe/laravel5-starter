@@ -1,3 +1,7 @@
+addons:
+  hosts:
+    - localhost
+
 language: php
 
 php:
