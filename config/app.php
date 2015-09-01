@@ -67,6 +67,18 @@ return [
 
     'fallback_locale' => 'en',
 
+
+    /*
+    |--------------------------------------------------------------------------
+    | Enable registration domain blacklisting
+    |--------------------------------------------------------------------------
+    |
+    | Set this to true to check against the domain_blacklist table on user registration.
+    |
+    */
+
+    'check_blacklist' => true,
+
     /*
     |--------------------------------------------------------------------------
     | Encryption Key
@@ -146,6 +158,7 @@ return [
         App\Providers\AppServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+        App\Providers\ValidatorServiceProvider::class,
 
     ],
 
