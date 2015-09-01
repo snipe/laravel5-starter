@@ -1,4 +1,4 @@
-// @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+ @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
 
 input {
     border-radius: 4px;
@@ -11,4 +11,23 @@ input {
   margin: 0px 5px 0px 0px;
   border-radius: 3px;
   float: left;
+}
+
+.alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 0px solid;
+    border-radius: 0px;
+    border-left: 5px solid;
+}
+
+.alert-dismissable .close {
+    position: relative;
+    top: -10px;
+    right: -5px;
+    color: inherit;
+}
+
+.has-error {
+    color: #a94442;
 }
