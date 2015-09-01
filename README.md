@@ -32,6 +32,12 @@ All CSS changes should be done through the `resources/assets/sass/app.scss` file
 
 If you wish to contribute to this project, all pull requests must include unit and/or Codeception tests. Pull requests that break the build will not be accepted.
 
+To run Codeception tests, use:
+
+```
+./vendor/bin/codecept run
+```
+
 ### To Do
 
 - Finish the interstitial that requires an email address if the social network doesn't pass one back.
