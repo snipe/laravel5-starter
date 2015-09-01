@@ -1,5 +1,8 @@
 ## Laravel 5 + Bootstrap 3 + Socialite
 
+[![Build Status](https://travis-ci.org/snipe/laravel5-starter.svg)](https://travis-ci.org/snipe/laravel5-starter)
+
+
 This is the beginning of a starter site for [Laravel 5.1](http://laravel.com/docs/5.1), [Bootstrap 3](http://getbootstrap.com) and [Socialite](http://laravel.com/docs/5.1/authentication#social-authentication) (the Laravel package that lets you use social authentication in your Laravel app).
 
 ### Features
