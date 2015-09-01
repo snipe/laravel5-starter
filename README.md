@@ -1,5 +1,7 @@
 ## Laravel 5 + Bootstrap 3 + Socialite
 
+[![Join the chat at https://gitter.im/snipe/laravel5-starter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/snipe/laravel5-starter?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 [![Build Status](https://travis-ci.org/snipe/laravel5-starter.svg)](https://travis-ci.org/snipe/laravel5-starter)
 
 
