@@ -1,8 +1,6 @@
 ## Laravel 5 + Bootstrap 3 + Socialite
 
-[![Join the chat at https://gitter.im/snipe/laravel5-starter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/snipe/laravel5-starter?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-
-[![Build Status](https://travis-ci.org/snipe/laravel5-starter.svg)](https://travis-ci.org/snipe/laravel5-starter)
+[![Join the chat at https://gitter.im/snipe/laravel5-starter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/snipe/laravel5-starter?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) [![Build Status](https://travis-ci.org/snipe/laravel5-starter.svg)](https://travis-ci.org/snipe/laravel5-starter)
 
 
 This is the beginning of a starter site for [Laravel 5.1](http://laravel.com/docs/5.1), [Bootstrap 3](http://getbootstrap.com) and [Socialite](http://laravel.com/docs/5.1/authentication#social-authentication) (the Laravel package that lets you use social authentication in your Laravel app).
