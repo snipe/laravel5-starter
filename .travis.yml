@@ -18,10 +18,13 @@ before_script:
   - touch storage/testing.sqlite
   - composer install -n --prefer-dist
   - php artisan migrate --database=sqlite_testing --force
+  - php artisan env
+  - cp .env.testing .env
+  - php artisan env
   - ./vendor/bin/codecept build
   - php artisan serve &
-  - php artisan env
   - sleep 5
+
 
 
 script:
