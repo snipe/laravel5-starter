@@ -9,6 +9,7 @@ This is the beginning of a starter site for [Laravel 5.1](http://laravel.com/doc
 - Regular email+password registration
 - Social login with Twitter, Facebook, Github and Google
 - Domain blacklist for user registrations
+- Working Codeception acceptance testing setup with Travic-CI.
 
 ### Why?
 
@@ -31,15 +32,18 @@ To disable this feature, set the `check_blacklist` value in `config/app.php` to 
 
 ### Developing
 
-All CSS changes should be done through the `resources/assets/sass/app.scss` file, with the generated CSS output to  `public/css/app.css`. We use Elixer, so this is easy to do using Gulp with the included `gulpfile.js`.
+All CSS changes should be done through the `resources/assets/sass/app.scss` file, with the generated CSS output to  `public/css/app.css`. We use Elixir, so this is easy to do using Gulp with the included `gulpfile.js`. No need to modify it unless you add new CSS files.
 
-If you wish to contribute to this project, all pull requests must include unit and/or Codeception tests. Pull requests that break the build will not be accepted.
-
-To run Codeception tests, use:
+To manually run Codeception tests, use:
 
 ```
 ./vendor/bin/codecept run
 ```
+
+Or if you're using Gulp for Elixir, run `npm install` and install the [laravel-elixir-codeception](https://www.npmjs.com/package/laravel-elixir-codeception)  npm package, and then `gulp watch` will automatically check for changed files and will run your test suite when you save.
+
+If you wish to contribute to this project, all pull requests must include unit and/or Codeception tests. Pull requests that break the build will not be accepted.
+
 
 ### To Do
 
