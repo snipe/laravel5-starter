@@ -11,6 +11,13 @@ var elixir = require('laravel-elixir');
  |
  */
 
+require('laravel-elixir-codeception');
+
+elixir(function(mix) {
+    mix.codeception();
+ });
+
+
 elixir(function(mix) {
     mix.sass('app.scss');
 });
