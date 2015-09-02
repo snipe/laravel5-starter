@@ -26,6 +26,8 @@ before_script:
 script:
   - ./vendor/bin/codecept run
 
+after_failure:
+  - cat tests/_output/WelcomeCept.fail.html
 notifications:
   webhooks:
     urls:
