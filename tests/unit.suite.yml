@@ -2,7 +2,6 @@
 
 # suite for unit (internal) tests.
 class_name: UnitTester
-class_name: UnitTester
 modules:
     enabled:
         - \Helper\Unit
