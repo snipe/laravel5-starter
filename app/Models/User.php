@@ -9,9 +9,11 @@ use Illuminate\Contracts\Auth\Authenticatable as AuthenticatableContract;
 use Illuminate\Contracts\Auth\CanResetPassword as CanResetPasswordContract;
 use DB;
 use App\Social;
+use Cviebrock\EloquentSluggable\SluggableInterface;
+use Cviebrock\EloquentSluggable\SluggableTrait;
 
 
-class User extends Model implements AuthenticatableContract, CanResetPasswordContract
+class User extends Model implements AuthenticatableContract, CanResetPasswordContract, SluggableInterface
 {
     use Authenticatable, CanResetPassword;
 
@@ -27,7 +29,7 @@ class User extends Model implements AuthenticatableContract, CanResetPasswordCon
      *
      * @var array
      */
-    protected $fillable = ['name', 'email', 'password'];
+    protected $fillable = ['first_name', 'last_name', 'email', 'password'];
 
     /**
      * The attributes excluded from the model's JSON form.
@@ -35,6 +37,14 @@ class User extends Model implements AuthenticatableContract, CanResetPasswordCon
      * @var array
      */
     protected $hidden = ['password', 'remember_token'];
+
+    use SluggableTrait;
+
+    protected $sluggable = [
+        'build_from' => 'first_name',
+        'save_to'    => 'slug',
+    ];
+
 
 
     public function social() {
@@ -65,7 +75,7 @@ class User extends Model implements AuthenticatableContract, CanResetPasswordCon
          if (!$user) {
              $user = new User;
              $user->email = $socialUser->getEmail();
-             $user->name = $socialUser->getName();
+             $user->first_name = $socialUser->getName();
              if (!$user->save()) {
                  return false;
              }
