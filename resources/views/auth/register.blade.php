@@ -18,13 +18,23 @@
         <form method="POST" action="/auth/register" class="form-horizontal">
             {!! csrf_field() !!}
 
-            <div class="form-group col-md-12 {{ $errors->first('name', ' has-error') }}">
+            <div class="form-group col-md-12 {{ $errors->first('first_name', ' has-error') }}">
                 <div class="col-md-3">
-                    <label for="name"{{ $errors->first('name', ' aria-invalid="true"') }}>Name</label>
+                    <label for="first_name"{{ $errors->first('first_name', ' aria-invalid="true"') }}>First Name</label>
                 </div>
                 <div class="col-md-9">
-                    <input type="text" name="name" value="{{ old('name') }}">
-                    {!! $errors->first('name', '<br><span class="has-error">:message</span>') !!}
+                    <input type="text" name="first_name" value="{{ old('first_name') }}">
+                    {!! $errors->first('first_name', '<br><span class="has-error">:message</span>') !!}
+                </div>
+            </div>
+
+            <div class="form-group col-md-12 {{ $errors->first('last_name', ' has-error') }}">
+                <div class="col-md-3">
+                    <label for="last_name"{{ $errors->first('last_name', ' aria-invalid="true"') }}>Last Name</label>
+                </div>
+                <div class="col-md-9">
+                    <input type="text" name="last_name" value="{{ old('last_name') }}">
+                    {!! $errors->first('last_name', '<br><span class="has-error">:message</span>') !!}
                 </div>
             </div>
 
